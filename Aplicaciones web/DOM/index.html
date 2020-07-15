@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accediendo al DOM</title>
+</head>
+<body>
+    <p id="intro">Introduccion al DOM(Document Objet MOdel)</p>
+    <p id="change">Este dato se cambia mediante una funcion JS</p>
+    <button onclick="cambiar()"> Cambiar el contenido</button>
+    <button id="evento">even handler</button>
+    <br>
+    <h1>Calculadora</h1>
+    <input id="num1" type="number" placeholder="Ingresa el número 1"> 
+    <input id="num2" type="text" placeholder="Ingresa el número 2">
+    <button id="btnX" value="" onclick="suma()" onchange="" onblur="">Realizar operación</button>
+    El resultado es: <label id="resultado"></label>
+</body>
+<!-- Codigo Java Script -->
+<script>
+    document.getElementById("intro").innerHTML = "Aquí estoy cambiando contenido del parrafo";
+    function cambiar (){
+        document.getElementById("change").innerHTML = "Ya hice el cambio mendiante una función llamada change";
+    }
+    // event handler 
+document.getElementById("evento").onclick = function (){
+    // document.write ("El ususario utilizó el botón");
+    alert("Bienvenido a mi sitio web");
+}
+
+function suma(){
+    // debugger;
+    let n1 = document.getElementById("num1").value;
+let n2 = document.getElementById("num2").value;
+let resultado = parseInt(n1, 10) + parseInt(n2, 10);
+console.log(resultado);
+document.getElementById("resultado").innerText = resultado;
+}
+
+
+</script>
+</html>

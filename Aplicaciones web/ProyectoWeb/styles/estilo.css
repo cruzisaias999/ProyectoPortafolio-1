@@ -1,0 +1,65 @@
+body,html{
+    height: 100%;
+    margin: 0px;
+    color: gray;
+}
+
+.menu{
+    min-height: 10%;
+    font-family: monospace,bold;
+    text-align: right;
+    padding-right: 20px;
+    background-color: gray;
+    opacity: 35%;
+}
+.menu li{
+    display: inline-block;
+
+    }
+    .menu li a{
+        padding: 20px 30px;
+        color: black;
+    }
+.bio{
+    background-image: url('../img/locoo.jpg');
+    min-height: 100%;    
+}
+.bio,.quiensoy,.skills{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.saludo{
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    font-style: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: crimson;
+}
+.saludo span.border{
+    background-color: gray;
+    opacity: 0.6;
+    padding: 15px;
+    border-radius: 3px;
+}
+.quiensoy{
+    background-image: url('../img/locoo.jpg');
+    min-height: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.skills{
+    background-image: url('../img/code.jpg');
+    min-width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
