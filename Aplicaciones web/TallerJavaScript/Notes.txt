@@ -1,0 +1,153 @@
+-Mozilla Developer Network
+-Wc3
+
+.:Tecnicamente:.
+
+*Interpretado => Necesita un interprete (Errores al final) - JavaScript
+*Compilado => Necesita un compilador (Errores durante la commpilicación) - Java, C, Python
+
+.:Características:.
+
+*Debilmente tipado => No importa el tipo del dato (var edad=39)
+*Tipado Dinámico => suma = edad + edad =78
+*Sensitivo => Distingue entre minúsculas y mayúsculas
+
+Entradas / salidas
+
+Console.log
+alert()
+prompt
+
+---Operadores Comparacion---
+Evaluan en valor de las variables y en base a ese devielve un reultado
+    == Igual
+    === Igual el valor, igual el tipo de dato ()
+    != Diferente de
+    > Mayor que
+    < Menor
+    >= Mayor o igual que
+    <= Menor o igual que
+
+---Logicos
+    Sirven para unir expresiones y verificar si se cumplen las condiciones
+
+---Condicionales---
+    Mediante la palabra reservada if , aplicamos una condicion , evaluamos el resultado y dependiendo de ello ejecutamos una tarea
+
+        if (expresion){
+            tarea
+        }
+
+        if(edad > 18){
+            console.log("Eres mayor de edad);
+        } else{
+            console.log ("eres menor de edad})
+        }
+---Ciclos---
+
+    Ejecucion con patrones (Se repite una actividad) y se utilizan los ciclos:
+        for:
+        while:
+        do while:
+
+        ---- Tipos de datos (JavaScript Dinamico) ---
+
+        String, Numérico, Array, Objeto 
+
+        typeof = Nos dice el tipo de dato de nuestra variable
+
+--- Propiedades de los datos ---
+
+var edad;
+var edad = --;
+var edad = null;
+--- Funciones---
+Bloques de codigo que se ejecutan en una base a el comportamiento de mi aplicacion:
+Llamado: Variable, invocar la funcion, boton.
+
+    ---Sintaxis---
+    function suma (){
+        num1+ num2;
+    }
+    var x = function(){
+        num1 + num2;
+    }
+--- Parametros de la funcion---
+var sma = function suma(num1 + num2){
+    return num1+num2;
+}
+--- Scope (alcance) ---
+
+Local Scope => Todo lo que se encuentre dentro de una funcion 
+
+function suma (){
+    //Local Scope
+        num1+ num2;
+}
+console.log(nombre) //Error porque nombre no está definida
+
+Global Scope => Disponible para todo el mundo, funciones, objetos, métodos, etc, pueden acceder al scope Global:
+var edad = prompt (Ingresa tu edad: )
+
+function validar (){
+    if (edad>18){
+        menor()
+    }
+}
+function inscribe(){
+    if (!edad){
+        console.log("No haz ingresado tu edad...")
+    }else{
+        console.log("Inscrito...")
+    }
+}
+
+--- Arrow functions ---
+
+function =(parametros)  => {
+    // todo
+}
+
+let suma = (a,b)=> {
+    return a + b;
+}
+//Nos ahorramos las llaves
+let suma = (a,b) => a + b;
+
+--- arrays ---
+
+3 Animales
+var animal1 = "Vaca";
+var animal1 = "Pollo";
+var animal1 = "Gato";
+
+--- SIntaxis de arrays ---
+var nombrearreglo = ["","","",n]
+
+var animales = ["Vaca", "Pollo", "Gato"]
+
+--- Metodos en arreglos ---
+
+pop()
+push()
+toString()
+shift()
+unshift()
+delete() *
+splice()
+slice()
+
+--- Objetos en JS ---
+
+funciones, expresiones regulares, array
+
+var auto = "Vocho";
+JSON = JavaScript Objet Notacion
+var auto = {Color: "Rojo", Marca:"Volkswagen", Modelo: "1980", Serial: "3121sdf35253165sdsdf365f"}
+
+
+
+
+
+
+
